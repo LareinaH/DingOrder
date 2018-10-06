@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>接口文档</title>
+
+</head>
+<body>
+<h1>接口列表</h1>
+  <p style="color: red">如果没有特殊说明，接口为get请求，入参必填</p>
+
+<h2>不需要登录的接口</h2>
+<ol>
+    <li>手机登录
+        <p> 接口地址：http://23.244.68.15:8081/member/un/login?cellphone=18551178309&passWord=123456&code=3214</p>
+        <p> 接口说明：如果手机未注册过，直接使用该手机号、密码注册</p>
+    </li>
+</ol>
+
+<h2>需要登录的接口</h2>
+<h3>以下接口调用时需要在请求头中添加 【APP-SESSION-ticket】：登录后返回的 ticket 字段</h3>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cotton.abmallback.mapper.MemberAddressMapper">
+  <resultMap id="BaseResultMap" type="com.cotton.abmallback.model.MemberAddress">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="member_id" jdbcType="BIGINT" property="memberId" />
+    <result column="address_type" jdbcType="VARCHAR" property="addressType" />
+    <result column="receiver_name" jdbcType="VARCHAR" property="receiverName" />
+    <result column="receiver_phone" jdbcType="VARCHAR" property="receiverPhone" />
+    <result column="receiver_province_name" jdbcType="VARCHAR" property="receiverProvinceName" />
+    <result column="receiver_province_code" jdbcType="INTEGER" property="receiverProvinceCode" />
+    <result column="receiver_city_name" jdbcType="VARCHAR" property="receiverCityName" />
+    <result column="receiver_city_code" jdbcType="INTEGER" property="receiverCityCode" />
+    <result column="receiver_county_name" jdbcType="VARCHAR" property="receiverCountyName" />
+    <result column="receiver_county_code" jdbcType="INTEGER" property="receiverCountyCode" />
+    <result column="receiver_address" jdbcType="VARCHAR" property="receiverAddress" />
+    <result column="is_default" jdbcType="BIT" property="isDefault" />
+  </resultMap>
+</mapper>

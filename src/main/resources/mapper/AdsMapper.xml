@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cotton.abmallback.mapper.AdsMapper">
+  <resultMap id="BaseResultMap" type="com.cotton.abmallback.model.Ads">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="ad_type" jdbcType="VARCHAR" property="adType" />
+    <result column="level" jdbcType="VARCHAR" property="level" />
+    <result column="ad_url" jdbcType="VARCHAR" property="adUrl" />
+    <result column="link_type" jdbcType="VARCHAR" property="linkType" />
+    <result column="link_params" jdbcType="VARCHAR" property="linkParams" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+  </resultMap>
+</mapper>

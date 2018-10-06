@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cotton.abmallback.mapper.CashPickUpMapper">
+  <resultMap id="BaseResultMap" type="com.cotton.abmallback.model.CashPickUp">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="member_id" jdbcType="BIGINT" property="memberId" />
+    <result column="money" jdbcType="DECIMAL" property="money" />
+    <result column="account_no" jdbcType="VARCHAR" property="accountNo" />
+    <result column="cash_status" jdbcType="VARCHAR" property="cashStatus" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+  </resultMap>
+</mapper>

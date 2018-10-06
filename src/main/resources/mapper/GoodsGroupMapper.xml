@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cotton.abmallback.mapper.GoodsGroupMapper">
+  <resultMap id="BaseResultMap" type="com.cotton.abmallback.model.GoodsGroup">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="goods_group_no" jdbcType="VARCHAR" property="goodsGroupNo" />
+    <result column="goods_group_name" jdbcType="VARCHAR" property="goodsGroupName" />
+  </resultMap>
+</mapper>

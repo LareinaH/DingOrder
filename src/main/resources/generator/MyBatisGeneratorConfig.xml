@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <!--代码生成命令 mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate-->
+
+    <!--admin-->
+
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <property name="javaFileEncoding" value="UTF-8"/>
+
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="com.cotton.base.mapper.BaseMapper"/>
+        </plugin>
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://rm-m5ep24m25q1193lp70o.mysql.rds.aliyuncs.com/abmall"
+                        userId="root" password="1qaz@WSX"/>
+
+        <javaModelGenerator targetPackage="com.cotton.abmallback.model" targetProject="${basedir.src.main.java}">
+            <property name="rootClass" value="com.cotton.base.model.BaseModel"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+        <sqlMapGenerator targetPackage="mapper" targetProject="${basedir.src.main.resources}"/>
+
+        <javaClientGenerator targetPackage="com.cotton.abmallback.mapper" targetProject="${basedir.src.main.java}"
+                             type="XMLMAPPER"/>
+
+        <!--		<table tableName="goods" domainObjectName="Goods">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>-->
+        <!--
+                <table tableName="goods_group">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>
+                <table tableName="goods_group_goods">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>
+
+                -->
+        		<table tableName="member" domainObjectName="Member">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>
+        <!--		<table tableName="member_address">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>-->
+
+        <!--		<table tableName="order_goods">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>-->
+        <!--	<table tableName="orders" domainObjectName="Orders">
+                <property name="useActualColumnNames" value="false" />
+                <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                <ignoreColumn column="id" />
+                <ignoreColumn column="is_deleted" />
+                <ignoreColumn column="gmt_create" />
+                <ignoreColumn column="gmt_modify" />
+            </table>-->
+
+ <!--       <table tableName="order_replenish" >
+            <property name="useActualColumnNames" value="false"/>
+            <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+            <ignoreColumn column="id"/>
+            <ignoreColumn column="is_deleted"/>
+            <ignoreColumn column="gmt_create"/>
+            <ignoreColumn column="gmt_modify"/>
+        </table>-->
+
+        <!--
+        <table tableName="sys_user">
+            <property name="useActualColumnNames" value="false" />
+            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+            <ignoreColumn column="id" />
+            <ignoreColumn column="is_deleted" />
+            <ignoreColumn column="gmt_create" />
+            <ignoreColumn column="gmt_modify" />
+        </table>
+        -->
+        <!--		<table tableName="sys_role">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>-->
+
+        <!--
+        <table tableName="sys_menu">
+            <property name="useActualColumnNames" value="false" />
+            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+            <ignoreColumn column="id" />
+            <ignoreColumn column="is_deleted" />
+            <ignoreColumn column="gmt_create" />
+            <ignoreColumn column="gmt_modify" />
+        </table>
+        <table tableName="sys_role_menu">
+            <property name="useActualColumnNames" value="false" />
+            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+            <ignoreColumn column="id" />
+            <ignoreColumn column="is_deleted" />
+            <ignoreColumn column="gmt_create" />
+            <ignoreColumn column="gmt_modify" />
+        </table>
+        <table tableName="sys_user_role">
+            <property name="useActualColumnNames" value="false" />
+            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+            <ignoreColumn column="id" />
+            <ignoreColumn column="is_deleted" />
+            <ignoreColumn column="gmt_create" />
+            <ignoreColumn column="gmt_modify" />
+        </table>
+
+        -->
+ <!--               <table tableName="ads">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>-->
+
+        <!--
+        <table tableName="cash_pick_up">
+            <property name="useActualColumnNames" value="false" />
+            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+            <ignoreColumn column="id" />
+            <ignoreColumn column="is_deleted" />
+            <ignoreColumn column="gmt_create" />
+            <ignoreColumn column="gmt_modify" />
+        </table>-->
+
+   <!--     <table tableName="redpack_record">
+            <property name="useActualColumnNames" value="false" />
+            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+            <ignoreColumn column="id" />
+            <ignoreColumn column="is_deleted" />
+            <ignoreColumn column="gmt_create" />
+            <ignoreColumn column="gmt_modify" />
+        </table>-->
+
+        <!--		<table tableName="goods_specification">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>-->
+
+        <!--		<table tableName="msg_message_template">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>-->
+        <!--		<table tableName="msg_member_message">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>-->
+<!--        		<table tableName="msg_platform_message">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>-->
+        <!--		<table tableName="account_money_flow">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>-->
+        <!--
+        <table tableName="shop_activities">
+            <property name="useActualColumnNames" value="false" />
+            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+            <ignoreColumn column="id" />
+            <ignoreColumn column="is_deleted" />
+            <ignoreColumn column="gmt_create" />
+            <ignoreColumn column="gmt_modify" />
+        </table>
+        <table tableName="shop_activity_goods">
+            <property name="useActualColumnNames" value="false" />
+            <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+            <ignoreColumn column="id" />
+            <ignoreColumn column="is_deleted" />
+            <ignoreColumn column="gmt_create" />
+            <ignoreColumn column="gmt_modify" />
+        </table>-->
+
+        <!--		<table tableName="shop_activity_config">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>-->
+
+        <!--		<table tableName="sms_captcha">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>-->
+
+        <!--		<table tableName="distribution_config">
+                    <property name="useActualColumnNames" value="false" />
+                    <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+                    <ignoreColumn column="id" />
+                    <ignoreColumn column="is_deleted" />
+                    <ignoreColumn column="gmt_create" />
+                    <ignoreColumn column="gmt_modify" />
+                </table>-->
+
+   <!--     <table tableName="content_study">
+             <property name="useActualColumnNames" value="false" />
+             <generatedKey column="id" sqlStatement="Mysql" identity="true" />
+             <ignoreColumn column="id" />
+             <ignoreColumn column="is_deleted" />
+             <ignoreColumn column="gmt_create" />
+             <ignoreColumn column="gmt_modify" />
+         </table>-->
+    </context>
+
+</generatorConfiguration>

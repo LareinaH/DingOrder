@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cotton.abmallback.mapper.RedpackRecordMapper">
+  <resultMap id="BaseResultMap" type="com.cotton.abmallback.model.RedpackRecord">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="cash_pick_up_id" jdbcType="BIGINT" property="cashPickUpId" />
+    <result column="redpeck_source" jdbcType="VARCHAR" property="redpeckSource" />
+    <result column="total_money" jdbcType="DECIMAL" property="totalMoney" />
+    <result column="redpack_sn" jdbcType="VARCHAR" property="redpackSn" />
+    <result column="redpack_url" jdbcType="VARCHAR" property="redpackUrl" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+  </resultMap>
+</mapper>

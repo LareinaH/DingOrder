@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cotton.abmallback.mapper.OrderGoodsMapper">
+  <resultMap id="BaseResultMap" type="com.cotton.abmallback.model.OrderGoods">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="order_id" jdbcType="BIGINT" property="orderId" />
+    <result column="good_id" jdbcType="BIGINT" property="goodId" />
+    <result column="good_specification_id" jdbcType="BIGINT" property="goodSpecificationId" />
+    <result column="good_name" jdbcType="VARCHAR" property="goodName" />
+    <result column="goods_specification_name" jdbcType="VARCHAR" property="goodsSpecificationName" />
+    <result column="good_thum" jdbcType="VARCHAR" property="goodThum" />
+    <result column="good_price" jdbcType="DECIMAL" property="goodPrice" />
+    <result column="good_num" jdbcType="INTEGER" property="goodNum" />
+    <result column="goods_specification_no" jdbcType="VARCHAR" property="goodsSpecificationNo" />
+  </resultMap>
+</mapper>

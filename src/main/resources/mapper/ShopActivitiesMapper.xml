@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cotton.abmallback.mapper.ShopActivitiesMapper" >
+  <resultMap id="BaseResultMap" type="com.cotton.abmallback.model.ShopActivities" >
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="activity_name" property="activityName" jdbcType="VARCHAR" />
+    <result column="activity_brief" property="activityBrief" jdbcType="VARCHAR" />
+    <result column="gmt_start" property="gmtStart" jdbcType="TIMESTAMP" />
+    <result column="gmt_end" property="gmtEnd" jdbcType="TIMESTAMP" />
+    <result column="activity_status" property="activityStatus" jdbcType="VARCHAR" />
+    <result column="activity_desc" property="activityDesc" jdbcType="LONGVARCHAR" />
+  </resultMap>
+</mapper>

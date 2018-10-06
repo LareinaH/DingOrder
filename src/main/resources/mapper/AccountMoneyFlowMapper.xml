@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cotton.abmallback.mapper.AccountMoneyFlowMapper">
+  <resultMap id="BaseResultMap" type="com.cotton.abmallback.model.AccountMoneyFlow">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="member_id" jdbcType="BIGINT" property="memberId" />
+    <result column="account_money_type" jdbcType="VARCHAR" property="accountMoneyType" />
+    <result column="promotion_level" jdbcType="VARCHAR" property="promotionLevel" />
+    <result column="order_id" jdbcType="BIGINT" property="orderId" />
+    <result column="distribut_money" jdbcType="DECIMAL" property="distributMoney" />
+  </resultMap>
+</mapper>

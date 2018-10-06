@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cotton.abmallback.mapper.MemberMapper">
+  <resultMap id="BaseResultMap" type="com.cotton.abmallback.model.Member">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="sex" jdbcType="VARCHAR" property="sex" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="display_name" jdbcType="VARCHAR" property="displayName" />
+    <result column="phone_num" jdbcType="VARCHAR" property="phoneNum" />
+    <result column="photo" jdbcType="VARCHAR" property="photo" />
+    <result column="level" jdbcType="VARCHAR" property="level" />
+    <result column="referrer_id" jdbcType="BIGINT" property="referrerId" />
+    <result column="refer_total_count" jdbcType="INTEGER" property="referTotalCount" />
+    <result column="refer_total_agent_count" jdbcType="INTEGER" property="referTotalAgentCount" />
+    <result column="wechat_no" jdbcType="VARCHAR" property="wechatNo" />
+    <result column="wechat_name" jdbcType="VARCHAR" property="wechatName" />
+    <result column="open_id" jdbcType="VARCHAR" property="openId" />
+    <result column="union_id" jdbcType="VARCHAR" property="unionId" />
+    <result column="money_total_spend" jdbcType="DECIMAL" property="moneyTotalSpend" />
+    <result column="money_total_earn" jdbcType="DECIMAL" property="moneyTotalEarn" />
+    <result column="money_total_take" jdbcType="DECIMAL" property="moneyTotalTake" />
+    <result column="money_lock" jdbcType="DECIMAL" property="moneyLock" />
+    <result column="token_android_wechat" jdbcType="VARCHAR" property="tokenAndroidWechat" />
+    <result column="token_ios_wechat" jdbcType="VARCHAR" property="tokenIosWechat" />
+    <result column="token_android" jdbcType="VARCHAR" property="tokenAndroid" />
+    <result column="token_ios" jdbcType="VARCHAR" property="tokenIos" />
+    <result column="token_wechat_mp" jdbcType="VARCHAR" property="tokenWechatMp" />
+    <result column="recommend_code_url" jdbcType="VARCHAR" property="recommendCodeUrl" />
+  </resultMap>
+</mapper>

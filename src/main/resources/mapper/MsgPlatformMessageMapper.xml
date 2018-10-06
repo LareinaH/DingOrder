@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cotton.abmallback.mapper.MsgPlatformMessageMapper">
+  <resultMap id="BaseResultMap" type="com.cotton.abmallback.model.MsgPlatformMessage">
+    <!--
+      WARNING - @mbggenerated
+    -->
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="brief" jdbcType="VARCHAR" property="brief" />
+    <result column="ads_url" jdbcType="VARCHAR" property="adsUrl" />
+    <result column="gmt_publish" jdbcType="TIMESTAMP" property="gmtPublish" />
+    <result column="level" jdbcType="VARCHAR" property="level" />
+    <result column="message_status" jdbcType="VARCHAR" property="messageStatus" />
+    <result column="message_detail" jdbcType="LONGVARCHAR" property="messageDetail" />
+  </resultMap>
+</mapper>
