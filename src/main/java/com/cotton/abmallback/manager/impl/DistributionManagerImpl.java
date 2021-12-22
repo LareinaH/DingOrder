@@ -116,7 +116,7 @@ public class DistributionManagerImpl implements DistributionManager {
                 }
             }
 
-            BigDecimal totalDistrubtionMoney = new BigDecimal(0);
+            BigDecimal totalDistributionMoney = new BigDecimal(0);
 
             //查找该订单用户的 订单个数.
             Example example = new Example(Orders.class);
@@ -134,18 +134,18 @@ public class DistributionManagerImpl implements DistributionManager {
             if (count <= 1) {
                 //首次购物 分享分享奖励
                 //1.1 self
-                     totalDistrubtionMoney = totalDistrubtionMoney.add(distributionShareAward(orders, self, selfSharePercent));
+                     totalDistributionMoney = totalDistributionMoney.add(distributionShareAward(orders, self, selfSharePercent));
                 //1.2 第一层
                 if (null != first) {
-                   totalDistrubtionMoney = totalDistrubtionMoney.add(distributionShareAward(orders, first, firstSharePercent));
+                   totalDistributionMoney = totalDistributionMoney.add(distributionShareAward(orders, first, firstSharePercent));
                 }
                 //1.2 第二层
                 if (null != second) {
-                   totalDistrubtionMoney = totalDistrubtionMoney.add(distributionShareAward(orders, second, secondSharePercent));
+                   totalDistributionMoney = totalDistributionMoney.add(distributionShareAward(orders, second, secondSharePercent));
                 }
                 //1.2 第三层
                 if (null != third) {
-                    totalDistrubtionMoney = totalDistrubtionMoney.add(distributionShareAward(orders, third, thirdSharePercent));
+                    totalDistributionMoney = totalDistributionMoney.add(distributionShareAward(orders, third, thirdSharePercent));
                 }
 
             }else {
